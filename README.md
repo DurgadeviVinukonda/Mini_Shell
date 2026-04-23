@@ -40,14 +40,14 @@ This project demonstrates process management, signal handling, job control, and 
 ---
 
 ## 🏗️ Project Structure
-.
+```
 ├── main.c # Entry point and signal registration
 ├── scan_input.c # Input handling and command parsing
 ├── functions.c # Built-in and external command execution
 ├── signal.c # Signal handling and job control
 ├── header.h # Structure definitions and prototypes
 ├── External_command.txt # List of external commands
-
+```
 ---
 
 ## ⚙️ How It Works
@@ -65,6 +65,7 @@ This project demonstrates process management, signal handling, job control, and 
 ---
 
 ## 📌 Sample Usage
+```
 Minishell:$ sleep 10
 ^Z
 [1]+ Stopped sleep 10
@@ -78,13 +79,14 @@ Minishell:$ bg
 Minishell:$ fg
 sleep 10
 
-
+```
 ---
 
 ## 🧪 Compilation & Run
+```
 gcc *.c -o minishell
 ./minishell
-
+```
 ## ⚠️ Notes
 
 - Job control is implemented using a singly linked list
